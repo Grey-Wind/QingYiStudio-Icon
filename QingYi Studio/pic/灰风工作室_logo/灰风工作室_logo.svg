@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="windGradient" x1="30%" y1="30%" x2="70%" y2="70%">
+      <stop offset="0%" stop-color="#E0E0E0" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#B0B0B0" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#808080" stop-opacity="0.5"/>
+    </linearGradient>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8F8F8"/>
+      <stop offset="100%" stop-color="#E8E8E8"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="1024" height="1024" rx="120" fill="url(#bgGradient)"/>
+  
+  <g transform="translate(256, 256) rotate(-15 256 256)">
+    <!-- 主风旋弧线 -->
+    <path d="M256,256 Q384,128 512,256 T768,256" 
+          fill="none" 
+          stroke="url(#windGradient)" 
+          stroke-width="48" 
+          stroke-linecap="round"/>
+    
+    <!-- 次级风旋弧线 -->
+    <path d="M320,320 Q448,192 576,320 T832,320" 
+          fill="none" 
+          stroke="url(#windGradient)" 
+          stroke-width="32" 
+          stroke-opacity="0.7"
+          stroke-linecap="round"/>
+    
+    <!-- 第三层风旋弧线 -->
+    <path d="M384,384 Q512,256 640,384 T896,384" 
+          fill="none" 
+          stroke="url(#windGradient)" 
+          stroke-width="24" 
+          stroke-opacity="0.5"
+          stroke-linecap="round"/>
+    
+    <!-- 风眼装饰点 -->
+    <circle cx="256" cy="256" r="24" fill="#A0A0A0" opacity="0.8"/>
+  </g>
+  
+  <!-- 微妙的投影效果 -->
+  <ellipse cx="512" cy="768" rx="300" ry="40" fill="#D0D0D0" opacity="0.2"/>
+</svg>
